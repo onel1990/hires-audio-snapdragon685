@@ -1,5 +1,3 @@
-# hires-audio-snapdragon685
-A lightweight Hi-Res Audio and Bluetooth Optimization module for the Redmi Note 12 4G (Snapdragon 685). Compatible with Magisk, KernelSU, and APatch.
 # Hi-Res Audio Enabler for Snapdragon 685 (Redmi Note 12 4G)
 
 A lightweight systemless audio optimization module specifically tailored for the **Redmi Note 12 4G (topaz/tapas)** powered by the Snapdragon 685 chipset. Fully compatible with **Magisk, KernelSU, and APatch**.
