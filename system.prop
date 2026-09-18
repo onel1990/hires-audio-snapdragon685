@@ -1,0 +1,36 @@
+# --- Qualcomm Snapdragon 685 Hi-Res Audio Props ---
+ro.vendor.audio.sdk.fluent_pcm=true
+ro.vendor.audio.sdk.ssr=true
+audio.offload.buffer.size.kb=64
+audio.offload.gapless.enabled=true
+
+# --- Force 24-bit and High Sampling Rates ---
+audio.offload.24bit.enable=true
+ro.vendor.audio.offload.24bit=true
+vendor.audio.hal.dsp.bit_width_enforce_mode=24
+audio.offload.passthrough=true
+
+# --- Disable Android Audio Resampling / Limiters ---
+ro.audio.samplerate=192000
+ro.audio.pcm.samplerate=192000
+persist.vendor.audio.ambisonics.auto_profile=true
+persist.vendor.audio.hifi=true
+
+# --- Xiaomi/MIUI Specific Stock Audio Fix ---
+persist.vendor.audio.misound.disable=false
+ro.vendor.audio.scenario.support=true
+
+# --- Qualcomm Bluetooth Audio HD Enabler ---
+persist.bluetooth.a2dp_offload.disabled=false
+ro.bluetooth.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac
+persist.vendor.bt.a2dp.aac_whitelist=false
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true
+
+# --- Audio Performance & Latency Tweaks ---
+audio.heap.size.mask=7
+ro.audio.flinger_scaler=1
+persist.audio.lowlatency.bypass=true
+
+# --- Bluetooth Signal & Bitrate Stability ---
+persist.bluetooth.btsnoop=false
+persist.vendor.bt.a2dp_vbr_supported=true
